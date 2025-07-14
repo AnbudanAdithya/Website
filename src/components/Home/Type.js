@@ -8,8 +8,8 @@ function Type() {
         strings: [
           "Finance Enthusiast",
           "Financial Modelling",
-          "Analytics",
-          "Financial Strategy",
+          "Integrity",
+          "Disciplined",
         ],
         autoStart: true,
         loop: true,
