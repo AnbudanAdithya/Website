@@ -19,37 +19,27 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              An aspiring finance professional and MBA candidate passionate about <b className="purple">analytics and
+              Corporate Finance</b>. I have a strong foundation in Accounting, and a keen interest in 
+              <b className="purple">financial modeling </b>, data-driven decision-making, and optimizing business processes to
+              enhance efficiency. 
               <br />
-              <br />I am fluent in classics like
+              <br />With an ability to lead teams and deliver results through analytical
+              problem-solving, I am eager to apply my skills in a dynamic finance role to drive
+              meaningful results.
+              <br /> 
+              <br />I eagerly find new avenues to learn, such as building this website to showcase about me.
+              <br />
+              <br />
+              My field of Interest's are learning&nbsp;
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
+                <b className="purple">Python, SQL </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Blockchain.
+                  Finacial Markets and Corporate Financial Strategy.
                 </b>
               </i>
               <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
