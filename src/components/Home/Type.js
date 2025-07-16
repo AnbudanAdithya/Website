@@ -7,7 +7,7 @@ function Type() {
       options={{
         strings: [
           "MBA Student",
-          "Financial Analytics",
+          "Finance & Analytics",
           "SSSIHL",
           "Disciplined",
         ],
