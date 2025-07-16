@@ -25,10 +25,10 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="EMI Model"
+              description="A simple yet powerful, user friendly excel model that lets user calculate the loan EMI to be paid."
+              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+              demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
