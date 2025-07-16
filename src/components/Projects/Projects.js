@@ -21,17 +21,20 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          {true &&(
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={EMI}
               isBlog={false}
               title="EMI Model"
               description="A simple yet powerful, user friendly excel model that lets user calculate the loan EMI to be paid."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+              //ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
               demoLink="/Assets/EMI_Calculator.xlsm"
             />
           </Col>
-
+          )}
+          
+          {false &&(
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
@@ -42,7 +45,9 @@ function Projects() {
               demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
+          )}
 
+          {false &&(
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
@@ -53,7 +58,9 @@ function Projects() {
               demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
+          )}
 
+          {false &&(
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
@@ -64,7 +71,9 @@ function Projects() {
               demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
+          )}
 
+          {false &&(
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={suicide}
@@ -72,10 +81,12 @@ function Projects() {
               title="Ai For Social Good"
               description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              //demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
+          )}
 
+          {false &&(
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
@@ -87,6 +98,8 @@ function Projects() {
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
+          )}
+          
         </Row>
       </Container>
     </Container>
