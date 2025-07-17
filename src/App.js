@@ -7,7 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Hobby from "./components/Hobby/Hobby";
-import Career from "./components/Career/Career";
+import Experience from "./components/Experience/Experience";
 import {
   BrowserRouter as Router,
   Route,
@@ -38,11 +38,11 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/Project" element={<Projects />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Resume" element={<Resume />} />
           <Route path="/Hobby" element={<Hobby />} />
-          <Route path="/career" element={<Career />} />
+          <Route path="/Experience" element={<Experience />} />
 
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
