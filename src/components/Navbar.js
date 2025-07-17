@@ -12,9 +12,12 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineAppstore
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { BsBriefcase } from "react-icons/bs";
+
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -72,6 +75,16 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/resume"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>    
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
@@ -85,12 +98,29 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/Hobby"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <AiOutlineAppstore
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Hobby
               </Nav.Link>
             </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/Experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <BsBriefcase 
+                  style={{ marginBottom: "2px" }}
+                /> 
+                Experience
+              </Nav.Link>
+            </Nav.Item>
+
 
             <Nav.Item>
               <Nav.Link

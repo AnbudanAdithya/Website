@@ -21,6 +21,7 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          
           {true &&(
           <Col md={4} className="project-card">
             <ProjectCard
@@ -29,7 +30,7 @@ function Projects() {
               title="EMI Model"
               description="A simple yet powerful, user friendly excel model that lets user calculate the loan EMI to be paid."
               //ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="/Assets/EMI_Calculator.xlsm"
+              demoLink="/Assets/Project/EMI_Calculator.xlsm"
             />
           </Col>
           )}
