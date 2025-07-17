@@ -26,6 +26,65 @@ function Hobby() {
               demoLink="Assets/Hobby/Music_1.mp3"
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <HobbyCard
+              imgPath={MusicImage}
+              title="Music Composition - 1"
+              description="Hear my first ever music composition created using DJ Loop Pads."
+              //ghLink="https://github.com/yourHobbyRepo"
+              demoLink="Assets/Hobby/Music_2.mp3"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <HobbyCard
+              imgPath={MusicImage}
+              title="Music Composition - 1"
+              description="Hear my first ever music composition created using DJ Loop Pads."
+              //ghLink="https://github.com/yourHobbyRepo"
+              demoLink="Assets/Hobby/Music_3.mp3"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <HobbyCard
+              imgPath={MusicImage}
+              title="Music Composition - 1"
+              description="Hear my first ever music composition created using DJ Loop Pads."
+              //ghLink="https://github.com/yourHobbyRepo"
+              demoLink="Assets/Hobby/Music_4.mp3"
+            />
+          </Col>
+          
+          <Col md={4} className="project-card">
+            <HobbyCard
+              imgPath={MusicImage}
+              title="Music Composition - 1"
+              description="Hear my first ever music composition created using DJ Loop Pads."
+              //ghLink="https://github.com/yourHobbyRepo"
+              demoLink="Assets/Hobby/Music_5.mp3"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <HobbyCard
+              imgPath={MusicImage}
+              title="Music Composition - 1"
+              description="Hear my first ever music composition created using DJ Loop Pads."
+              //ghLink="https://github.com/yourHobbyRepo"
+              demoLink="Assets/Hobby/Music_6.mp3"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <HobbyCard
+              imgPath={MusicImage}
+              title="Music Composition - 1"
+              description="Hear my first ever music composition created using DJ Loop Pads."
+              //ghLink="https://github.com/yourHobbyRepo"
+              demoLink="Assets/Hobby/Music_7.mp3"
+            />
+          </Col>
           {/* Add more <Col> with HobbyCard as needed */}
         </Row>
       </Container>

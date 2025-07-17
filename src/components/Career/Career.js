@@ -1,6 +1,6 @@
 // Career.js
 import React from 'react';
-function Career() {
+function Experience() {
   return <div><h1>Career Experience</h1></div>;
 }
-export default Career;
+export default Experience;
