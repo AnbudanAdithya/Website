@@ -6,12 +6,16 @@ import { SiTableau } from "react-icons/si";
 import { FaFileExcel, FaFilePowerpoint, FaFileWord } from "react-icons/fa";
 import { SiCanva } from "react-icons/si";
 import { SiPowerbi } from "react-icons/si";
+import { SiR } from "react-icons/si"
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiR />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiMicrosoftsqlserver />
