@@ -7,7 +7,7 @@ import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import EMI from "../../Assets/Projects/Excel_Files/EMI_Model.jpg";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import Tax from "../../Assets/Projects/Excel_Files/Tax_Calculator.jpg";
 
 function Projects() {
   return (
@@ -27,7 +27,7 @@ function Projects() {
             <ProjectCard
               imgPath={EMI}
               isBlog={false}
-              title="EMI Model"
+              title="EMI Calulator"
               description="A simple yet powerful, user friendly excel model that lets user calculate the loan EMI to be paid."
               //ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
               demoLink="/Assets/Project/EMI_Calculator.xlsm"
@@ -35,15 +35,15 @@ function Projects() {
           </Col>
           )}
           
-          {false &&(
+          {true &&(
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={Tax}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Tax Calcutor"
+              description="Based on new budget as announced by Hon'ble Finance Minister, I tried to create a model to identify the tax payable."
+              //ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+              demoLink="/Assets/Project/Tax_Calculator.xlsm"
             />
           </Col>
           )}
