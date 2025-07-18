@@ -6,7 +6,7 @@ import logo from "../Assets/Header_CNB.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+//import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -16,7 +16,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-import { BsBriefcase } from "react-icons/bs";
+//import { BsBriefcase } from "react-icons/bs";
 
 
 function NavBar() {
@@ -105,29 +105,6 @@ function NavBar() {
                   style={{ marginBottom: "3px" }}
                 />{" "}
                 Hobby
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/Experience"
-                onClick={() => updateExpanded(false)}
-              >
-                <BsBriefcase 
-                  style={{ marginBottom: "3px" }}
-                />{" "}
-                Experience
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                href="https://adithya05.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "3px" }} /> Blogs
               </Nav.Link>
             </Nav.Item>
 
