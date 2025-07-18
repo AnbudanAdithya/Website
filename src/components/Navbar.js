@@ -58,7 +58,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "3px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
@@ -68,7 +68,7 @@ function NavBar() {
                 to="/About"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "3px" }} /> About
               </Nav.Link>
             </Nav.Item>
 
@@ -78,7 +78,7 @@ function NavBar() {
                 to="/Resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "3px" }} /> Resume
               </Nav.Link>
             </Nav.Item>    
 
@@ -89,7 +89,7 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
+                  style={{ marginBottom: "3px" }}
                 />{" "}
                 Projects
               </Nav.Link>
@@ -102,7 +102,7 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineAppstore
-                  style={{ marginBottom: "2px" }}
+                  style={{ marginBottom: "3px" }}
                 />{" "}
                 Hobby
               </Nav.Link>
@@ -115,12 +115,11 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <BsBriefcase 
-                  style={{ marginRight: "6px", marginBottom: "3px" }}
-                /> 
+                  style={{ marginBottom: "3px" }}
+                />{" "}
                 Experience
               </Nav.Link>
             </Nav.Item>
-
 
             <Nav.Item>
               <Nav.Link
@@ -128,7 +127,7 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <ImBlog style={{ marginBottom: "3px" }} /> Blogs
               </Nav.Link>
             </Nav.Item>
 
