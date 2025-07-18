@@ -34,9 +34,9 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "If you ignore the negative and accept the positive, you will acheive excellence!"{" "}
+            "If you ignore the negatives and accept the positives, you will acheive excellence!"{" "}
           </p>
-          <footer className="blockquote-footer">Adithya</footer>
+          <footer className="blockquote-footer">S. Adithya</footer>
         </blockquote>
       </Card.Body>
     </Card>

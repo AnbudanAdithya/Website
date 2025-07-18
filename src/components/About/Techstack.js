@@ -5,7 +5,7 @@ import { SiMicrosoftsqlserver } from "react-icons/si";
 import { SiTableau } from "react-icons/si";
 import { FaFileExcel, FaFilePowerpoint, FaFileWord } from "react-icons/fa";
 import { SiCanva } from "react-icons/si";
-
+import { SiPowerbi } from "react-icons/si";
 
 function Techstack() {
   return (
@@ -30,6 +30,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiTableau />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPowerbi />
       </Col>
     </Row>
   );
