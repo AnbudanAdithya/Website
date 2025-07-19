@@ -30,7 +30,7 @@ function Hobby() {
           <Col md={4} className="project-card">
             <HobbyCard
               imgPath={MusicImage}
-              title="Music Composition - 1"
+              title="Music Composition - 2"
               description="Hear my first ever music composition created using DJ Loop Pads."
               //ghLink="https://github.com/yourHobbyRepo"
               demoLink="Assets/Hobby/Music_2.mp3"
@@ -40,7 +40,7 @@ function Hobby() {
           <Col md={4} className="project-card">
             <HobbyCard
               imgPath={MusicImage}
-              title="Music Composition - 1"
+              title="Music Composition - 3"
               description="Hear my first ever music composition created using DJ Loop Pads."
               //ghLink="https://github.com/yourHobbyRepo"
               demoLink="Assets/Hobby/Music_3.mp3"
@@ -49,7 +49,7 @@ function Hobby() {
           <Col md={4} className="project-card">
             <HobbyCard
               imgPath={MusicImage}
-              title="Music Composition - 1"
+              title="Music Composition - 4"
               description="Hear my first ever music composition created using DJ Loop Pads."
               //ghLink="https://github.com/yourHobbyRepo"
               demoLink="Assets/Hobby/Music_4.mp3"
@@ -59,7 +59,7 @@ function Hobby() {
           <Col md={4} className="project-card">
             <HobbyCard
               imgPath={MusicImage}
-              title="Music Composition - 1"
+              title="Music Composition - 5"
               description="Hear my first ever music composition created using DJ Loop Pads."
               //ghLink="https://github.com/yourHobbyRepo"
               demoLink="Assets/Hobby/Music_5.mp3"
@@ -69,7 +69,7 @@ function Hobby() {
           <Col md={4} className="project-card">
             <HobbyCard
               imgPath={MusicImage}
-              title="Music Composition - 1"
+              title="Music Composition - 6"
               description="Hear my first ever music composition created using DJ Loop Pads."
               //ghLink="https://github.com/yourHobbyRepo"
               demoLink="Assets/Hobby/Music_6.mp3"
@@ -79,7 +79,7 @@ function Hobby() {
           <Col md={4} className="project-card">
             <HobbyCard
               imgPath={MusicImage}
-              title="Music Composition - 1"
+              title="Music Composition - 7"
               description="Hear my first ever music composition created using DJ Loop Pads."
               //ghLink="https://github.com/yourHobbyRepo"
               demoLink="Assets/Hobby/Music_7.mp3"
