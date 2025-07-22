@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
+import Report from "../../Assets/Projects/PDF_Files/FinTech_Report.jpg";
+import BR from "../../Assets/Projects/PDF_Files/Book_Review.png";
 import EMI from "../../Assets/Projects/Excel_Files/EMI_Model.jpg";
-import suicide from "../../Assets/Projects/suicide.png";
 import Tax from "../../Assets/Projects/Excel_Files/Tax_Calculator.jpg";
+import emotion from "../../Assets/Projects/emotion.png";
+import suicide from "../../Assets/Projects/suicide.png";
 
 function Projects() {
   return (
@@ -48,28 +48,28 @@ function Projects() {
           </Col>
           )}
 
-          {false &&(
+          {true &&(
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={BR}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Book Review - Psychology of Money"
+              description="Take a look at my book review I have shared my thoughts on the book 'Psychology of Money' by Morgan Housel."
+              //ghLink="https://github.com/soumyajit4419/Editor.io"
+              demoLink="/Assets/Project/Book_Review.pdf"              
             />
           </Col>
           )}
 
-          {false &&(
+          {true &&(
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={Report}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="FinTech Banks - Brief Study Report"
+              description="A brief study report on the FinTech Banks in India, covering their impact, growth, and future prospects."
+              //ghLink="https://github.com/soumyajit4419/Plant_AI"
+              demoLink="/Assets/Project/FinTech_Banks.pdf"
             />
           </Col>
           )}
