@@ -6,7 +6,7 @@ import logo from "../Assets/Header_CNB.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-//import { ImBlog } from "react-icons/im";
+import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -80,7 +80,18 @@ function NavBar() {
               >
                 <CgFileDocument style={{ marginBottom: "3px" }} /> Resume
               </Nav.Link>
-            </Nav.Item>    
+            </Nav.Item>
+
+            <Nav.Item>
+            <Nav.Link
+              as={Link}
+              to="/blog"
+              onClick={() => updateExpanded(false)}
+            >
+              <ImBlog style={{ marginBottom: "2px", marginRight: "5px" }}/>
+               Blogs
+            </Nav.Link>
+          </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
