@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Hobby from "./components/Hobby/Hobby";
 import Experience from "./components/Experience/Experience";
+import Blogs from "./components/Blogs/Blogs";
+import BlogPost from "./components/Blogs/BlogPost";
 import {
   BrowserRouter as Router,
   Route,
@@ -43,6 +45,8 @@ function App() {
           <Route path="/Resume" element={<Resume />} />
           <Route path="/Hobby" element={<Hobby />} />
           <Route path="/Experience" element={<Experience />} />
+          <Route path="/blog" element={<Blogs />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
 
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>

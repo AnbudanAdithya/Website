@@ -741,3 +741,44 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* -------Blogs Section ------- */
+/* -------- Blog Post Section ----------- */
+.blog-post-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-url) !important;
+  color: white !important;
+}
+
+/* This new wrapper creates the margins on the left and right */
+.blog-post-content-wrapper {
+  max-width: 850px;
+  margin: 0 auto; /* This centers the content column */
+  padding: 0 10px;
+}
+
+/* This new rule justifies the text inside the blog post */
+.blog-post-content-wrapper p {
+  text-align: justify;
+}
+
+/* These styles are for blockquotes within your post */
+.blog-post-section .blockquote {
+  font-size: 1.2 rem;
+  color: #c770f0;
+  border-left: 3px solid #c770f0;
+  padding-left: 1rem;
+}
+
+.blog-post-section .blockquote-footer {
+  color: #a55c9a;
+}
+
+.project-card-view .card-img-top {
+  padding: 20px;
+  object-fit: cover; /* This makes the image cover the area without distortion */
+  height: 250px; /* You can adjust this height to your liking */
+  border-radius: 10px !important;
+}
