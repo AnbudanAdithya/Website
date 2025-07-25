@@ -782,3 +782,11 @@ button:focus {
   height: 250px; /* You can adjust this height to your liking */
   border-radius: 10px !important;
 }
+
+/* Find and replace the existing rule with this one */
+.project-card-view .card-img-top {
+  padding: 0; /* This removes the space around the image */
+  object-fit: cover; 
+  height: auto; /* Let height adjust to maintain aspect ratio */
+  border-radius: 10px 10px 0 0 !important; /* Rounds only the top corners */
+}
