@@ -1,10 +1,21 @@
+/* This is the main CSS file for the website.
+ * It contains styles for various components and sections.
+ */
+
 html {
+  /* * This is the root element of the document.
+   * It sets the font size and line height for the entire document.
+   */
   --section-background-color: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.582),
     rgba(12, 8, 24, 0.904)
   );
 
+  /* * This is the background gradient for the home section
+   * It creates a gradient effect from dark to light colors
+   * The colors are rgba values with varying levels of opacity
+   */
   --image-gradient: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.678),
@@ -14,6 +25,9 @@ html {
   --imp-text-color: #c770f0;
 }
 
+/* * This is the main CSS file for the website.
+ * It contains styles for various components and sections.
+ */
 .purple {
   color: var(--imp-text-color) !important;
 }
@@ -38,6 +52,9 @@ button:focus {
   background-position: center;
 }
 
+/* * This class is used to hide the preloader when it is not needed
+ * It sets the opacity to 0, effectively making it invisible
+ */
 #preloader-none {
   opacity: 0;
 }
@@ -57,18 +74,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #121212;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 12px;
 }
 
@@ -82,6 +99,7 @@ button:focus {
   backdrop-filter: blur(15px) !important;
 }
 
+/* This is the navbar that appears at the top of the page */
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
@@ -89,15 +107,17 @@ button:focus {
   font-size: 1.2rem !important;
 }
 
+/* This is the top bar that rotates when the navbar is toggled */
 .navbar-toggler {
   position: relative !important;
   background-color: transparent !important;
   border-color: transparent !important;
 }
 
+/* This is the top bar that rotates when the navbar is toggled */
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #f9f9f9 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -107,17 +127,20 @@ button:focus {
   opacity: 1 !important;
 }
 
+/* This is the top bar that rotates when the navbar is toggled */
 .navbar-toggler:focus,
 .navbar-toggler:active {
   outline: 0 !important;
 }
 
+/* This is the top bar that rotates when the navbar is toggled */
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
   transition: transform 0.35s ease-in-out !important;
   transition: transform 0.35s ease-in-out !important;
 }
 
+/* This is the middle bar that disappears when the navbar is toggled */
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
   position: absolute !important;
   left: 12px !important;
@@ -126,12 +149,14 @@ button:focus {
   opacity: 0.9 !important;
 }
 
+/* This is the bottom bar that disappears when the navbar is toggled */
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
   height: 12px !important;
   visibility: hidden !important;
   background-color: transparent !important;
 }
 
+/* This is the middle bar that disappears when the navbar is toggled */
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
   position: absolute !important;
   left: 12px !important;
@@ -140,46 +165,53 @@ button:focus {
   opacity: 0.9 !important;
 }
 
+/* Responsive navbar */
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
   }
+
+  /* Hide the underline effect on mobile */
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
+/* Navbar brand */
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
 
+/* Navbar brand logo */
 .logo {
   height: 1.4em !important;
   width: 2.5em !important;
 }
 
+/* Navbar brand */
 .navbar-nav .nav-link {
   color: white !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
 
+/* Navbar links */
 .nav-link {
   padding: 0.8rem 1rem !important;
 }
-
+/* Responsive navbar links */
 @media (max-width: 767px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
 }
-
+/* Navbar items */
 .navbar-nav .nav-item {
   position: relative;
   margin-left: 20px;
 }
-
+/* Navbar links */
 .navbar-nav .nav-item a {
   font-weight: 400;
   transition: all 0.3s ease-out 0s;
@@ -187,6 +219,7 @@ button:focus {
   z-index: 1;
 }
 
+/* underline effect */
 .navbar-nav .nav-item a::after {
   content: "";
   position: relative;
@@ -194,13 +227,14 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #ffffff;
   bottom: 1px;
   left: 0;
   z-index: -1;
   transition: all 0.3s ease-out 0s;
 }
 
+/* Navbar links hover effect */
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
 }
@@ -216,6 +250,10 @@ button:focus {
   display: inline-block;
 }
 
+/* * This is the keyframes for the wave animation
+ * It defines the different stages of the animation
+ */
+/* Each percentage represents a point in time during the animation */
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
@@ -242,6 +280,12 @@ button:focus {
     transform: rotate(0deg);
   }
 }
+/* This is the main container for the particles effect */
+/* It is positioned fixed to cover the entire viewport */
+/* The background is set to cover the entire area without repeating */
+/* The particles effect is applied to this container */
+/* The width and height are set to 100% to fill the viewport */
+/* The !important rule is used to override any other styles that may conflict */
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -250,10 +294,12 @@ button:focus {
   height: 100%;
 }
 
+/* This is the home header section */
 .home-header {
   padding-top: 80px !important;
 }
 
+/* This is the home section */
 .home-section {
   position: relative;
   z-index: -1;
@@ -264,12 +310,14 @@ button:focus {
   padding-top: 30px !important;
 }
 
+/* This is the home content section */
 .home-content {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
 }
 
+/* This is the home content section for smaller screens */
 .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;
