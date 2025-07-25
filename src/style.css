@@ -21,7 +21,8 @@ html {
     rgba(17, 16, 16, 0.678),
     rgba(12, 10, 22, 0.863)
   );
-
+/* * This is the background image for the home section*/
+/*Let me INTRODUCE and its section*/
   --imp-text-color: #c770f0;
 }
 
@@ -114,10 +115,11 @@ button:focus {
   border-color: transparent !important;
 }
 
-/* This is the top bar that rotates when the navbar is toggled */
+
+/*navbar-toggler in windowed mode*/
 .navbar-toggler span {
   display: block !important;
-  background-color: #f9f9f9 !important;
+  background-color: #ffffff !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
