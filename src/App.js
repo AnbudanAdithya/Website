@@ -10,6 +10,7 @@ import Hobby from "./components/Hobby/Hobby";
 import Experience from "./components/Experience/Experience";
 import Blogs from "./components/Blogs/Blogs";
 import BlogPost from "./components/Blogs/BlogPost";
+
 import {
   BrowserRouter as Router,
   Route,

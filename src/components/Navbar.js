@@ -16,7 +16,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-//import { BsBriefcase } from "react-icons/bs";
+import { BsBriefcase } from "react-icons/bs";
 
 
 function NavBar() {
@@ -79,6 +79,16 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "3px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/Experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <BsBriefcase style={{ marginBottom: "3px" }} /> Experience
               </Nav.Link>
             </Nav.Item>
 
