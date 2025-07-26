@@ -7,7 +7,6 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Hobby from "./components/Hobby/Hobby";
-import Experience from "./components/Experience/Experience";
 import Blogs from "./components/Blogs/Blogs";
 import BlogPost from "./components/Blogs/BlogPost";
 
@@ -45,7 +44,6 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Resume" element={<Resume />} />
           <Route path="/Hobby" element={<Hobby />} />
-          <Route path="/Experience" element={<Experience />} />
           <Route path="/blog" element={<Blogs />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
 

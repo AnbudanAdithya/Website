@@ -383,7 +383,7 @@ button:focus {
 .home-about-body {
   padding-top: 50px;
   font-size: 1.2em !important;
-  text-align: left;
+  text-align: justify;
 }
 
 .home-about-social {
@@ -601,7 +601,7 @@ button:focus {
 }
 
 .tech-icons {
-  font-size: 4.5em !important;
+  font-size: 4.5rem !important;
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
@@ -615,22 +615,34 @@ button:focus {
   transition: all 0.4s ease 0s !important;
 }
 
+/* This class is used to style the tech icons in the about section
+ * It sets the font size, margin, padding, opacity, border, and other styles
+ * The transition property is used to create a smooth hover effect
+ */
+.tech-icons:hover {
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+}
+
+/* Responsive adjustments for tech icons */
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px !important;
   }
 }
-
-.tech-icons:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
-}
 .tech-icon-images {
-  padding: 20px !important;
-  line-height: 1.6 !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding-top: 20px !important;
 }
 
+/* This class is used to style the about section image
+ * It sets the width, height, and border radius of the image
+ */
 .quote-card-view {
   border: none !important;
   color: white !important;
@@ -735,6 +747,78 @@ button:focus {
   border: 2px solid #8a49a8;
 }
 
+/*--------------------------*/
+/*---- Resume Section ----*/
+/*--------------------------*/
+.resume-section .resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ADD THIS NEW RULE TO ADJUST SPACING */
+.resume-section .project-heading {
+  margin-bottom: 0.5rem !important;
+}
+
+
+.resume-section .resume-card {
+  /* New translucent background with blur effect */
+  background: rgba(255, 255, 255, 0.055);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Slightly more visible border */
+
+  /* Existing styles */
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume-section .resume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.resume-section .resume-left h4 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.resume-section .resume-date {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.resume-section .resume-right h5 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.resume-section .resume-right ul {
+  padding-left: 20px;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.resume-section .resume-right ul li {
+  padding-bottom: 10px;
+  list-style-type: disc;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+  .resume-section .resume-left {
+    text-align: center; /* Changed from left to center */
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+
 .like-item {
   padding-top: 10px !important;
   font-size: 1.1em !important;
@@ -792,6 +876,7 @@ button:focus {
   display: none !important;
 }
 
+
 /* -------Blogs Section ------- */
 /* -------- Blog Post Section ----------- */
 .blog-post-section {
@@ -826,6 +911,7 @@ button:focus {
   color: #a55c9a;
 }
 
+/* This is the project card view */
 .project-card-view .card-img-top {
   padding: 20px;
   object-fit: cover; /* This makes the image cover the area without distortion */
@@ -833,7 +919,6 @@ button:focus {
   border-radius: 10px !important;
 }
 
-/* Find and replace the existing rule with this one */
 .project-card-view .card-img-top {
   padding: 0; /* This removes the space around the image */
   object-fit: cover; 
@@ -842,172 +927,3 @@ button:focus {
 }
 
 
-/* Experience Section */
-/*--------------------------*/
-/*---- Experience Section ----*/
-/*--------------------------*/
-
-.experience-timeline {
-  position: relative;
-  padding: 2rem 0;
-  margin-top: 2rem;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/* The vertical line of the timeline */
-.experience-timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 20px;
-  height: 100%;
-  width: 4px;
-  background: var(--accent-primary); /* Uses the existing accent color */
-}
-
-.experience-item {
-  padding: 10px 40px;
-  padding-left: 10px; /* Space for the timeline dot */
-  position: relative;
-  background: inherit;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-/* The dot on the timeline */
-.experience-item::before {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  left: 8px; /* Positioned on the timeline */
-  background-color: var(--accent-primary);
-  border: 4px solid var(--card-background);
-  top: 25px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.experience-content {
-  /* New translucent background with blur effect */
-  background: rgba(255, 255, 255, 0.079);
-  backdrop-filter: blur(10px);
-  
-  /* Styling for the side line */
-  border-left: 5px solid var(--accent-primary);
-  border-top: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-
-  /* Existing styles */
-  padding: 20px 30px;
-  position: relative;
-  border-radius: 8px;
-  color: white !important;
-}
-
-.experience-content h3 {
-  font-weight: bold;
-}
-
-.experience-date {
-  color: rgba(255, 255, 255, 0.7);
-  font-style: italic;
-  font-size: 0.9rem;
-}
-
-.experience-content ul {
-  padding-left: 20px;
-  margin-top: 15px;
-}
-
-.experience-content ul li {
-  text-align: justify;
-  padding-bottom: 10px;
-}
-
-/*----------------------------------*/
-/*---- Experience Card Side Line ---*/
-/*----------------------------------*/
-
-.experience-content {
-  /* This adds the line on the left side of the card */
-  border-left: 5px solid var(--accent-primary);
-  
-  /* Adds some space between the line and the text */
-  padding-left: 30px; 
-}
-
-
-/*--------------------------*/
-/*---- Resume Section ----*/
-/*--------------------------*/
-.resume-section .resume-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* ADD THIS NEW RULE TO ADJUST SPACING */
-.resume-section .project-heading {
-  margin-bottom: 1rem !important;
-}
-
-
-.resume-section .resume-card {
-  /* New translucent background with blur effect */
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Slightly more visible border */
-
-  /* Existing styles */
-  border-radius: 10px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
-
-.resume-section .resume-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.resume-section .resume-left h4 {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.resume-section .resume-date {
-  color: rgba(255, 255, 255, 0.7);
-  font-style: italic;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-}
-
-.resume-section .resume-right h5 {
-  font-size: 1.7rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.resume-section .resume-right ul {
-  padding-left: 20px;
-  margin-top: 15px;
-  text-align: justify;
-}
-
-.resume-section .resume-right ul li {
-  padding-bottom: 10px;
-  list-style-type: disc;
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 767px) {
-  .resume-section .resume-left {
-    text-align: left;
-    margin-bottom: 1.5rem;
-  }
-}
