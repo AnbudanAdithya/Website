@@ -305,18 +305,19 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  /*background-image: var(--image-gradient), url(./Assets/home-bg.jpg);*/
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
 
-/* This is the home content section */
+/* This is the home content section 
+HI, THERE, I'M*/
 .home-content {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
-  text-align: left;
+  text-align: justify;
 }
 
 /* This is the home content section for smaller screens */
@@ -330,10 +331,12 @@ button:focus {
   padding-left: 45px !important;
 }
 
+/*ADITHYA*/
 .main-name {
   color: #cd5ff8;
 }
 
+/* This is the typewriter effect for the home section */
 .Typewriter__wrapper {
   font-size: 2.2em !important;
   color: #be6adf !important;
@@ -355,6 +358,7 @@ button:focus {
   }
 }
 
+/* This is the avatar section */
 .myAvtar {
   justify-content: center !important;
   padding-top: 9em !important;
@@ -367,26 +371,69 @@ button:focus {
   }
 }
 
+
+/* This is the home about section
+ * It contains the description and body of the about section
+ * The background color is set to a gradient
+ */
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-top: 10px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+/*----------------------------------------------------*/
+/*---- New Styles for Home2 Two-Card Layout       ----*/
+/*----------------------------------------------------*/
+
+/* This styles the card containing the introduction text.
+   It gives it a background, border, padding, and makes it a flex container
+   to help with alignment. */
+
+
+.home-about-description-card {
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.home-about-description {
-  color: white !important;
-  padding-top: 100px !important;
-  padding-bottom: 20px !important;
+/* This targets the h1 heading inside the description card.
+   It centers the text and provides appropriate spacing. */
+.home-about-description-card h1 {
+  font-size: 2.1em;
+  padding-bottom: 20px;
   text-align: center;
 }
 
+/* This styles the main paragraph of text inside the description card,
+   ensuring it remains justified. */
 .home-about-body {
-  padding-top: 50px;
   font-size: 1.2em !important;
   text-align: justify;
 }
 
+/* This styles the card that contains the avatar image.
+   It gives it a matching background, border, and padding. */
+.home-about-avatar-card {
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* This ensures the social links section below the cards has adequate spacing. */
 .home-about-social {
+  margin-top: 50px;
+}.home-about-social {
   text-align: center !important;
   padding-top: 25px;
   color: white !important;
@@ -592,12 +639,73 @@ button:focus {
 /* About */
 /* --------- */
 
+/*--------------------------------*/
+/*---- New About Section Styles ----*/
+/*--------------------------------*/
+
+/* This is the main container for the entire "About" page. */
 .about-section {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
+  
+}
+
+/* This styles the card containing the "Know Who I'M" heading and text. */
+.about-details-card {
+  background: var(--card-background); /* Uses your website's card background color */
+  border: 1px solid var(--border-color); /* Uses your website's border color */
+  border-radius: 10px;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* This centers the "Know Who I'M" heading within its own card. */
+.about-details-card .project-heading {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* This styles the card containing the avatar image. 
+   It uses flexbox to perfectly center the image. */
+.about-avatar-card {
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*---------------------------------------------*/
+/*---- About Section Font Color Controller ----*/
+/*---------------------------------------------*/
+
+/* This rule targets the main paragraph in the "Know Who I'M" card.
+   It overrides the general 'color: white' from the parent section. */
+.quote-card-view .blockquote > p {
+  color: rgb(226, 232, 240); /* This is your main text color, change if you want */
+}
+
+/* This styles the list of hobbies (e.g., "Listening & Creating Music"). */
+.about-activity {
+  color: rgb(226, 232, 240); /* Matches the main text color */
+}
+
+/* This uses the new className to style the quote at the bottom. */
+.blockquote-quote {
+  color: rgb(169, 169, 169) !important; /* A muted grey for the quote, change as you like */
+}
+
+/* This styles the signature/footer below the quote. */
+.blockquote-footer {
+  color: rgb(155, 126, 172) !important; /* A darker grey for the footer */
 }
 
 .tech-icons {

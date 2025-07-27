@@ -33,7 +33,7 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p className="blockquote-quote">
             "If you ignore the negatives and accept the positives, you will acheive excellence!"{" "}
           </p>
           <footer className="blockquote-footer">S. Adithya</footer>
