@@ -8,21 +8,32 @@ function ResumeNew() {
   // Your experience data
   const experiences = [
     {
-      role: "Software Engineer Intern",
-      company: "Tech Solutions Inc.",
-      date: "May 2024 - August 2024",
+      role: "Finance Intern",
+      company: "Ashok Leyland Limited.",
+      date: "May 2025 - June 2025 (2 Months)",
       description: [
-        "Contributed to the development of a customer-facing web portal using React.",
-        "Collaborated with a team of 5 engineers to design and implement new features.",
+        "Gained hands-on experience in financial analysis and reporting.",
+        "In depth understanding of finance department operations, including forecasting, budgeting, and variance analysis.",
+        "Entrusted with the responsibility of validating invoices and documents for payment processing.",
       ],
     },
     {
-      role: "Web Development Fellow",
-      company: "Code Academy",
-      date: "January 2023 - May 2023",
+      role: "Student Head of Cooperative Society Stores",
+      company: "Sri Sathya Sai Institute of Higher Learning",
+      date: "August 2022 - Present",
       description: [
-        "Completed an intensive 500+ hour full-stack web development program.",
-        "Developed and deployed multiple projects using the MERN stack.",
+        "Entrusted with the responsibility of Heading the Cooperative stores, for 2 years.",
+        "Acquired Skills such as Cash Handling, Budgeting of inventory and Cash, and Cost Analysis.",
+        "Led a team of 10 students, fostering a collaborative environment and enhancing team productivity.",
+      ],
+    },
+    {
+      role: "Product Development - Risk Management",
+      company: "Cooperative Soceity Stores",
+      date: "November 2023",
+      description: [
+        "Developed a cashless billing system that aims to reduce need for physical cash requirement and the billing time.",
+        "Contributed towards evaluating the efficacy and viability and addressing the risks related to a particular feature.",
       ],
     },
   ];
@@ -30,16 +41,22 @@ function ResumeNew() {
   // Your education data
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Technology",
-      date: "2020 - 2024",
-      description: "Graduated with a focus on software engineering and artificial intelligence. Maintained a 3.8 GPA.",
+      degree: "Masters in Business Administration",
+      institution: "Sri Sathya Sai Institute of Higher Learning",
+      date: "2024 - 2026",
+      description: "Currently pursuing with majors in Finance and minors in Analytics.",
     },
     {
+      degree: "Bachelor of Commerce (Honors)",
+      institution: "Sri Sathya Sai Institute of Higher Learning",
+      date: "2021 - 2024",
+      description: "Graduated with a focus on Accounting and Finance, with a CGPA of 7.8",
+    },
+   {
       degree: "High School Diploma",
-      institution: "Central High School",
-      date: "2016 - 2020",
-      description: "Active member of the coding club and robotics team.",
+      institution: "DTEA Senior Secondary School, New Delhi",
+      date: "2019 - 2021",
+      description: "Topper of school with a score of 95% in CBSE Class 12 Examination and a score of 95% in Class 10 Examination.",
     },
   ];
 
@@ -48,22 +65,24 @@ function ResumeNew() {
       <Container fluid className="resume-section">
         <Particle />
         <Container>
-          {/* Experience Section */}
-          <h1 className="project-heading" style={{ marginBottom: "2rem" }}>
+          {/* --- Experience Section --- */}
+          <h1 className="project-heading">
             Professional <strong className="purple">Experience</strong>
           </h1>
           <p style={{ color: "white" }}>
-          Here are some of the roles and responsibilities I've had.
-        </p>
-          <div className="resume-container">
+            Here are some of the roles and responsibilities I've had.
+          </p>
+          {/* This now has a unique container class: "experience-container" */}
+          <div className="experience-container">
             {experiences.map((exp, index) => (
-              <div className="resume-card" key={index}>
+              // This card has a unique class: "experience-card"
+              <div className="experience-card" key={index}>
                 <Row className="align-items-center">
-                  <Col md={4} className="resume-left">
+                  <Col md={4} className="experience-card-left">
                     <h4>{exp.role}</h4>
-                    <p className="resume-date">{exp.date}</p>
+                    <p className="experience-card-date">{exp.date}</p>
                   </Col>
-                  <Col md={8} className="resume-right">
+                  <Col md={8} className="experience-card-right">
                     <h5 className="purple">{exp.company}</h5>
                     <ul>
                       {exp.description.map((point, i) => (
@@ -76,19 +95,24 @@ function ResumeNew() {
             ))}
           </div>
 
-          {/* Education Section */}
-          <h1 className="project-heading" style={{ margin: "5rem 0 2rem 0" }}>
+          {/* --- Education Section --- */}
+          <h1 className="project-heading" style={{ marginTop: "5rem" }}>
             <strong className="purple">Education</strong>
           </h1>
-          <div className="resume-container">
+          <p style={{ color: "white" }}>
+            I've done my education from these reputed institutions.
+          </p>
+          {/* This now has a unique container class: "education-container" */}
+          <div className="education-container">
             {education.map((edu, index) => (
-              <div className="resume-card" key={index}>
+              // This card has a unique class: "education-card"
+              <div className="education-card" key={index}>
                 <Row className="align-items-center">
-                  <Col md={4} className="resume-left">
+                  <Col md={4} className="education-card-left">
                     <h4>{edu.degree}</h4>
-                    <p className="resume-date">{edu.date}</p>
+                    <p className="education-card-date">{edu.date}</p>
                   </Col>
-                  <Col md={8} className="resume-right">
+                  <Col md={8} className="education-card-right">
                     <h5 className="purple">{edu.institution}</h5>
                     <p>{edu.description}</p>
                   </Col>
@@ -97,7 +121,7 @@ function ResumeNew() {
             ))}
           </div>
           
-          {/* Download CV Button */}
+          {/* --- Download CV Button --- */}
           <Row style={{ justifyContent: "center", position: "relative", marginTop: "50px" }}>
             <Button
               variant="primary"
