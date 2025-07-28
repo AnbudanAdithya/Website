@@ -21,9 +21,9 @@ function Home2() {
             </h1>
             <p className="home-about-body">
               An aspiring finance professional and MBA candidate passionate about 
-              <b className="purple">analytics and Corporate Finance</b>. 
+              <b className="purple"> analytics and Corporate Finance</b>. 
               I have a strong foundation in Accounting, and a keen interest in 
-              <b className="purple">financial modeling</b>, data-driven decision-making, 
+              <b className="purple"> financial modeling</b>, data-driven decision-making, 
               and optimizing business processes to enhance efficiency. 
               <br />
               <br />With an ability to lead teams and deliver results through 
@@ -36,11 +36,8 @@ function Home2() {
               <br />
               My field of Interest's are learning&nbsp;
               <i>
-                <b className="purple">Python, SQL </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Finacial Markets and Corporate Financial Strategy.
-                </b>
+                <b className="purple">Finacial Markets and Corporate Financial Strategy</b> and
+                also in areas related to{" "}<b className="purple"> Python, SQL</b>.                
               </i>
               <br />
             </p>
