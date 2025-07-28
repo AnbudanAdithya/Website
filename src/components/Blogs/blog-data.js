@@ -2,7 +2,7 @@ import React from "react";
 import FirstBlogPost from "./content/FirstBlogPost";
 // Import other blog posts here...
 
-import chatbotThumbnail from "../../Assets/Projects/chatify.png";
+import chatbotThumbnail from "../../Assets/Blogs/chatify.png";
 
 export const blogData = [
   {

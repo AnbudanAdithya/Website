@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Image } from "react-bootstrap";
-import blogImage from "../../../Assets/Projects/chatify.png"; // Example image, change as needed
+import blogImage from "../../../Assets/Blogs/chatify.png"; // Example image, change as needed
 
 function FirstBlogPost() {
   return (
