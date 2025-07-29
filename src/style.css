@@ -12,7 +12,7 @@ html {
   --image-gradient: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.678),
-    rgba(25, 25, 26, 0.863)
+    rgba(0, 0, 0, 0.863)
   );
 
   --imp-text-color: #cd5ff8; /* <-- Changed to high-contrast white */
@@ -21,6 +21,7 @@ html {
 /* * This is the main CSS file for the website.
  * It contains styles for various components and sections.
  */
+ /*Feel free to "Connect" */
 .purple {
   color: var(--imp-text-color) !important;
 }
