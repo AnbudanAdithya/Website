@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import Particle from "../Particle";
 import pdf from "../../Assets/S Adithya.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
@@ -63,7 +62,6 @@ function ResumeNew() {
   return (
     <div>
       <Container fluid className="resume-section">
-        <Particle />
         <Container>
           {/* --- Experience Section --- */}
           <h1 className="project-heading">
