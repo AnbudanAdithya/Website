@@ -2,7 +2,6 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { blogData } from "./blog-data";
-import Particle from "../Particle";
 
 function BlogPost() {
   const { slug } = useParams();
@@ -14,11 +13,8 @@ function BlogPost() {
 
   return (
     <section>
-      <Particle />
       <Container className="blog-post-section">
-        <div className="blog-post-content-wrapper">
-          {blog.component}
-        </div>
+        <div className="blog-post-content-wrapper">{blog.component}</div>
       </Container>
     </section>
   );

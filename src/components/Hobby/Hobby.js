@@ -2,13 +2,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import HobbyCard from "./HobbyCard";
-import Particle from "../Particle";
 import MusicImage from "../../Assets/Hobby/Music_Image.jpg"; // example image
 
 function Hobby() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
           My <strong className="purple">Hobbies </strong>
@@ -55,7 +53,7 @@ function Hobby() {
               demoLink="Assets/Hobby/Music_4.mp3"
             />
           </Col>
-          
+
           <Col md={4} className="project-card">
             <HobbyCard
               imgPath={MusicImage}

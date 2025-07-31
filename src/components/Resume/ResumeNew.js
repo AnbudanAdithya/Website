@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import Particle from "../Particle";
 import pdf from "../../Assets/S Adithya.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
@@ -44,26 +43,28 @@ function ResumeNew() {
       degree: "Masters in Business Administration",
       institution: "Sri Sathya Sai Institute of Higher Learning",
       date: "2024 - 2026",
-      description: "Currently pursuing with majors in Finance and minors in Analytics.",
+      description:
+        "Currently pursuing with majors in Finance and minors in Analytics.",
     },
     {
       degree: "Bachelor of Commerce (Honors)",
       institution: "Sri Sathya Sai Institute of Higher Learning",
       date: "2021 - 2024",
-      description: "Graduated with a focus on Accounting and Finance, with a CGPA of 7.8",
+      description:
+        "Graduated with a focus on Accounting and Finance, with a CGPA of 7.8",
     },
-   {
+    {
       degree: "High School Diploma",
       institution: "DTEA Senior Secondary School, New Delhi",
       date: "2019 - 2021",
-      description: "Topper of school with a score of 95% in CBSE Class 12 Examination and a score of 95% in Class 10 Examination.",
+      description:
+        "Topper of school with a score of 95% in CBSE Class 12 Examination and a score of 95% in Class 10 Examination.",
     },
   ];
 
   return (
     <div>
       <Container fluid className="resume-section">
-        <Particle />
         <Container>
           {/* --- Experience Section --- */}
           <h1 className="project-heading">
@@ -120,9 +121,15 @@ function ResumeNew() {
               </div>
             ))}
           </div>
-          
+
           {/* --- Download CV Button --- */}
-          <Row style={{ justifyContent: "center", position: "relative", marginTop: "50px" }}>
+          <Row
+            style={{
+              justifyContent: "center",
+              position: "relative",
+              marginTop: "50px",
+            }}
+          >
             <Button
               variant="primary"
               href={pdf}
