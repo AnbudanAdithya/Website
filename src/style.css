@@ -12,24 +12,16 @@ html {
   --image-gradient: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.678),
-    rgba(0, 0, 0, 0.863)
+    rgba(12, 10, 22, 0.863)
   );
 
-<<<<<<< HEAD
   --imp-text-color: #ffffff; /* <-- Changed to high-contrast white */
-=======
-  --imp-text-color: #cd5ff8; /* <-- Changed to high-contrast white */
->>>>>>> eb570697b68f3bcf10fc3b82eb5be09abdd9f1b2
 }
 
 /* * This is the main CSS file for the website.
  * It contains styles for various components and sections.
  */
-<<<<<<< HEAD
 /*Feel free to "Connect" */
-=======
- /*Feel free to "Connect" */
->>>>>>> eb570697b68f3bcf10fc3b82eb5be09abdd9f1b2
 .purple {
   color: var(--imp-text-color) !important;
 }
@@ -379,10 +371,6 @@ HI, THERE, I'M*/
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 10px !important;
-<<<<<<< HEAD
-=======
-  background-color:#121212;
->>>>>>> eb570697b68f3bcf10fc3b82eb5be09abdd9f1b2
   color: white !important;
 }
 /*----------------------------------------------------*/
