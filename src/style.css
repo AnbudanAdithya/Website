@@ -6,22 +6,22 @@ html {
   --section-background-color: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgba(12, 10, 22, 0.863)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.678),
-    rgba(25, 25, 26, 0.863)
+    rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #cd5ff8; /* <-- Changed to high-contrast white */
+  --imp-text-color: #ffffff; /* <-- Changed to high-contrast white */
 }
 
 /* * This is the main CSS file for the website.
  * It contains styles for various components and sections.
  */
- /*Feel free to "Connect" */
+/*Feel free to "Connect" */
 .purple {
   color: var(--imp-text-color) !important;
 }
@@ -107,7 +107,6 @@ button:focus {
   background-color: transparent !important;
   border-color: transparent !important;
 }
-
 
 /*navbar-toggler in windowed mode*/
 .navbar-toggler span {
@@ -300,6 +299,7 @@ button:focus {
   z-index: -1;
   background-position: top center;
   background-repeat: no-repeat;
+  background-color: #121212;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -363,7 +363,6 @@ HI, THERE, I'M*/
   }
 }
 
-
 /* This is the home about section
  * It contains the description and body of the about section
  * The background color is set to a gradient
@@ -372,7 +371,6 @@ HI, THERE, I'M*/
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 10px !important;
-  background-color:#121212;
   color: white !important;
 }
 /*----------------------------------------------------*/
@@ -382,7 +380,6 @@ HI, THERE, I'M*/
 /* This styles the card containing the introduction text.
    It gives it a background, border, padding, and makes it a flex container
    to help with alignment. */
-
 
 .home-about-description-card {
   background: var(--card-background);
@@ -425,7 +422,8 @@ HI, THERE, I'M*/
 /* This ensures the social links section below the cards has adequate spacing. */
 .home-about-social {
   margin-top: 50px;
-}.home-about-social {
+}
+.home-about-social {
   text-align: center !important;
   padding-top: 25px;
   color: white !important;
@@ -642,12 +640,13 @@ HI, THERE, I'M*/
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
-  
 }
 
 /* This styles the card containing the "Know Who I'M" heading and text. */
 .about-details-card {
-  background: var(--card-background); /* Uses your website's card background color */
+  background: var(
+    --card-background
+  ); /* Uses your website's card background color */
   border: 1px solid var(--border-color); /* Uses your website's border color */
   border-radius: 10px;
   padding: 2rem;
@@ -682,7 +681,11 @@ HI, THERE, I'M*/
 /* This rule targets the main paragraph in the "Know Who I'M" card.
    It overrides the general 'color: white' from the parent section. */
 .quote-card-view .blockquote > p {
-  color: rgb(226, 232, 240); /* This is your main text color, change if you want */
+  color: rgb(
+    226,
+    232,
+    240
+  ); /* This is your main text color, change if you want */
 }
 
 /* This styles the list of hobbies (e.g., "Listening & Creating Music"). */
@@ -692,7 +695,11 @@ HI, THERE, I'M*/
 
 /* This uses the new className to style the quote at the bottom. */
 .blockquote-quote {
-  color: rgb(169, 169, 169) !important; /* A muted grey for the quote, change as you like */
+  color: rgb(
+    169,
+    169,
+    169
+  ) !important; /* A muted grey for the quote, change as you like */
 }
 
 /* This styles the signature/footer below the quote. */
@@ -770,13 +777,11 @@ HI, THERE, I'M*/
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
-  
 }
 
 .resume-section .project-heading {
   margin-bottom: 1rem !important;
 }
-
 
 /*----------------------------------------------------*/
 /*-----------     Experience Section       -----------*/
@@ -833,7 +838,6 @@ HI, THERE, I'M*/
   list-style-type: disc;
 }
 
-
 /*----------------------------------------------------*/
 /*-----------      Education Section       -----------*/
 /*----------------------------------------------------*/
@@ -883,7 +887,6 @@ HI, THERE, I'M*/
   text-align: justify;
 }
 
-
 /*----------------------------------------------------*/
 /*-----------       Responsive Rules       -----------*/
 /*----------------------------------------------------*/
@@ -897,7 +900,6 @@ HI, THERE, I'M*/
     margin-bottom: 1.5rem;
   }
 }
-
 
 .like-item {
   padding-top: 10px !important;
@@ -956,7 +958,6 @@ HI, THERE, I'M*/
   display: none !important;
 }
 
-
 /* -------Blogs Section ------- */
 /* -------- Blog Post Section ----------- */
 .blog-post-section {
@@ -1001,9 +1002,7 @@ HI, THERE, I'M*/
 
 .project-card-view .card-img-top {
   padding: 0; /* This removes the space around the image */
-  object-fit: cover; 
+  object-fit: cover;
   height: auto; /* Let height adjust to maintain aspect ratio */
   border-radius: 10px 10px 0 0 !important; /* Rounds only the top corners */
 }
-
-
