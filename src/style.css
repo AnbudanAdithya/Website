@@ -536,7 +536,7 @@ HI, THERE, I'M*/
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px #77358875 !important;
+  box-shadow: 0 4px 5px 3px #02fde4 !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -546,7 +546,7 @@ HI, THERE, I'M*/
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px #8148908f !important;
 }
 
 .blog-card {
