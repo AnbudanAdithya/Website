@@ -1030,3 +1030,37 @@ HI, THERE, I'M*/
   font-size: 1em; /* Makes the sub-list text slightly smaller */
   margin-bottom: 0.5rem; /* Reduces the space between sub-points */
 }
+
+
+/*--------------------------*/
+/*----   Credit Modal   ----*/
+/*--------------------------*/
+
+/* This styles the semi-transparent backdrop behind the modal */
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(100px);
+}
+
+/* This styles the main modal content box */
+.credit-modal .modal-content {
+  background-color: #1E1E1E; /* Dark card background */
+  color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+/* Styles the header of the modal */
+.credit-modal .modal-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Styles the close button in the header */
+.credit-modal .modal-header .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Styles the footer of the modal */
+.credit-modal .modal-footer {
+  border-top: 1px solid var(--border-color);
+}
