@@ -987,3 +987,46 @@ HI, THERE, I'M*/
   height: auto; /* Let height adjust to maintain aspect ratio */
   border-radius: 10px 10px 0 0 !important; /* Rounds only the top corners */
 }
+
+
+/*----------------------------------*/
+/*----   Styled List for Blogs   ----*/
+/*----------------------------------*/
+
+/* This is the main container for your lettered list. */
+.styled-list {
+  list-style-type: upper-alpha; /* This creates the A, B, C... format */
+  padding-left: 20px; /* Adds some space on the left */
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* This styles each individual point (A, B, C...). */
+.styled-list li {
+  padding-left: 15px; /* Space between the letter and the text */
+  margin-bottom: 1.5rem; /* Space between each point */
+  font-size: 1.0em;
+  text-align: justify;
+}
+
+/* This styles the bolded heading for each point. */
+.styled-list li strong {
+  color: var(--accent-primary); /* Uses your website's main accent color */
+  display: block; /* Puts the heading on its own line */
+  margin-bottom: 0.5rem;
+}
+
+/* --- NEW STYLES FOR THE SUB-LIST --- */
+
+/* This targets the nested ordered list (the sub-list). */
+.styled-list ol {
+  list-style-type: lower-roman; /* This creates the i, ii, iii... format */
+  margin-top: 1.0rem; /* Adds space above the sub-list */
+  padding-left: 30px; /* Indents the sub-list further */
+}
+
+/* This styles each item within the sub-list. */
+.styled-list ol li {
+  font-size: 1em; /* Makes the sub-list text slightly smaller */
+  margin-bottom: 0.5rem; /* Reduces the space between sub-points */
+}

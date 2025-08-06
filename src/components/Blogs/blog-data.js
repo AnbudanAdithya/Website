@@ -2,7 +2,7 @@ import React from "react";
 import PurposeofWebsite from "./content/PurposeofWebsite";
 // Import other blog posts here...
 
-import chatbotThumbnail from "../../Assets/Blogs/chatify.png";
+import Purpose from "../../Assets/Blogs/Purpose.png";
 
 export const blogData = [
   {
@@ -10,8 +10,8 @@ export const blogData = [
     title: "Why do you need your own website?",
     description:
       "My opinions as to why I created this website and why every corporate professional (or who is going to enter it) should have their own website.",
-    thumbnail: chatbotThumbnail,
-    date: "July 25, 2025",
+    thumbnail: Purpose,
+    date: "August 08, 2025",
     component: <PurposeofWebsite />,
   },
   // Add other blog post objects here...
