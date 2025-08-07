@@ -25,7 +25,7 @@ function Projects() {
                 isBlog={false}
                 title="EMI Calulator"
                 description="A simple yet powerful, user friendly excel model that lets user calculate the loan EMI to be paid."
-                demoLink="/Assets/Project/EMI_Calculator.xlsm"
+                demoLink="/Assets/Project/Excel_Files/EMI_Calculator.xlsm"
               />
             </Col>
           )}
@@ -37,7 +37,7 @@ function Projects() {
                 isBlog={false}
                 title="Tax Calcutor"
                 description="Based on new budget as announced by Hon'ble Finance Minister, I tried to create a model to identify the tax payable."
-                demoLink="/Assets/Project/Tax_Calculator.xlsm"
+                demoLink="/Assets/Project/Excel_Files/Tax_Calculator.xlsm"
               />
             </Col>
           )}
@@ -49,7 +49,7 @@ function Projects() {
                 isBlog={false}
                 title="Book Review - Psychology of Money"
                 description="Take a look at my book review I have shared my thoughts on the book 'Psychology of Money' by Morgan Housel."
-                demoLink="/Assets/Project/Book_Review.pdf"
+                demoLink="/Assets/Project/PDF/Book_Review.pdf"
               />
             </Col>
           )}
@@ -61,7 +61,7 @@ function Projects() {
                 isBlog={false}
                 title="FinTech Banks - Brief Study Report"
                 description="A brief study report on the FinTech Banks in India, covering their impact, growth, and future prospects."
-                demoLink="/Assets/Project/FinTech_Banks.pdf"
+                demoLink="/Assets/Project/PDF/FinTech_Banks.pdf"
               />
             </Col>
           )}
