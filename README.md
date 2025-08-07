@@ -3,18 +3,18 @@
   <a href="https://adithya05.vercel.app/" target="_blank">S.Adithya</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme.png" />
+  <img alt="Demo" src="./Images/readme-img1.png" />
 </div>
 
 <br/>
 
 ## TL;DR
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Anbudan Adithya](https://github.com/AnbudanAdithya/Website). Also give credits to the original author of this website template [Soumyaji4419](https://github.com/soumyajit4419/Portfolio).
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [S. Adithya](https://github.com/AnbudanAdithya/Website). Also give credits to the original author of this website template [SoumyajitBehra](https://github.com/soumyajit4419/Portfolio)
 
 ## Built With
 
-My personal portfolio <a href="https://adithya05.vercel.app/" target="_blank">S Adithya</a> features my projects, my hobbies, my professional experience and I also post some blogs on interesting topics.<br/>
+My personal portfolio <a href="https://adithya05.vercel.app/" target="_blank">S Adithya</a> features about my projects, my hobbies, my professional experience and some blogs and articles that I write on some topics.<br/>
 
 This project was built using these technologies.
 
@@ -51,3 +51,4 @@ The page will reload if you make edits.
 
 Open the project folder and Navigate to `/src/components/`. <br/>
 You will find all the components used and you can edit your information accordingly.
+

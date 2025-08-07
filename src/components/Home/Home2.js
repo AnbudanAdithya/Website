@@ -37,7 +37,7 @@ function Home2() {
               My field of Interest's are learning&nbsp;
               <i>
                 <b className="purple">
-                  Finacial Markets and Corporate Financial Strategy
+                  Financial Markets and Corporate Financial Strategy
                 </b>{" "}
                 and also in areas related to{" "}
                 <b className="purple"> Python, SQL</b>.
