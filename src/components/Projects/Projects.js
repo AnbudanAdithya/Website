@@ -6,6 +6,7 @@ import BR from "../../Assets/Projects/PDF_Files/Book_Review.png";
 import EMI from "../../Assets/Projects/Excel_Files/EMI_Model.jpg";
 import Tax from "../../Assets/Projects/Excel_Files/Tax_Calculator.jpg";
 import BA from "../../Assets/Projects/Drive/BA.png";
+import CVP from "../../Assets/Projects/Excel_Files/CVP_Analysis.png";
 
 function Projects() {
   return (
@@ -74,6 +75,18 @@ function Projects() {
                 title="Bike Sales - Predictive Analytics using R Studio and Power BI"
                 description="A model and a dashboard predicting sales of bike in India based on different criteria with a comprehensive report; Dataset adopted from Kaggle."
                 demoLink="https://drive.google.com/drive/folders/1TrKx-nA0NzJck2LAvIH-b78XGXDh8dyt?usp=drive_link"
+              />
+            </Col>
+          )}
+
+            {true && (
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={CVP}
+                isBlog={false}
+                title="Cost Volume Profit Analysis"
+                description="A model and a dashboard that analyzes the relationship between cost, volume, and profit using simple Excel Model."
+                demoLink="/Assets/Project/Excel_Files/CVP.xlsm"
               />
             </Col>
           )}
