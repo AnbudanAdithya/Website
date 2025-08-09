@@ -24,7 +24,7 @@ export const blogData = [
     thumbnail: Raksha_Bandhan,
     date: "August 09, 2025",
     isExternal: true,
-    link: "https://medium.com/@adithyas0503/raksha-bandhan-a-thread-that-ties-more-than-just-wrists-5d1521aa09bd"
+    link: "https://open.substack.com/pub/adithya05/p/raksha-bandhan-a-thread-that-ties?r=69wbpv&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
 },
 
   // Add other blog post objects here...
