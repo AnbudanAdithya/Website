@@ -1064,3 +1064,60 @@ HI, THERE, I'M*/
 .credit-modal .modal-footer {
   border-top: 1px solid var(--border-color);
 }
+
+
+/*----------------------------------------------------*/
+/*-----------          Pagination          -----------*/
+/*----------------------------------------------------*/
+
+/* This styles the main container that holds all the pagination buttons.
+   It uses flexbox to center them. */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 1.0rem;
+  gap: 8px; /* Adds space between each button */
+}
+
+/* This is the style for each individual button (numbers, "Prev", "Next"). */
+.pagination-container li a {
+  padding: 3px 7px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  color: rgb(255, 255, 255); /* Sets the text color to white */
+  background-color: #22ad9f; /* Subtle purple translucent background */
+  border: 1px solid #22ad9f; /* Matches the background color */
+  text-decoration: none; /* Removes underline from links */
+  transition: all 0.3s ease-in-out;
+  display: block; /* Ensures the whole area is clickable */
+}
+
+/* This adds a hover effect when you move your mouse over a button. */
+.pagination-container li a:hover {
+  background-color: #11e5d0;
+  border-color: #11e5d0;
+}
+
+/* This is the style for the CURRENTLY ACTIVE page number.
+   It gives it the solid, vibrant background. */
+.pagination-active a {
+  background-color: #02fde4 !important; /* Your website's vibrant purple */
+  border: 1px solid #02fde4 !important;
+  color: white;
+}
+
+/* This styles the "Prev" and "Next" buttons when they are disabled
+   (i.e., when you are on the first or last page). */
+.pagination-disabled a {
+  color: #11e5d0;
+  cursor: not-allowed;
+}
+
+.pagination-disabled a:hover {
+  background-color: #11e5d0; /* Prevents hover effect on disabled buttons */
+  border-color: #11e5d0;
+}

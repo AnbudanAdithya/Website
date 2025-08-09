@@ -16,9 +16,21 @@ function BlogCard(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
+        {props.isExternal ? (
+          // If the post is external, render a regular <a> tag
+          <Button
+            variant="primary"
+            href={props.link}
+            target="_blank" // Opens the link in a new tab
+            rel="noopener noreferrer" // Security best practice for external links
+          >
+            Read More &rarr;
+          </Button>
+        ):(
         <Button as={Link} to={`/blog/${props.slug}`} variant="primary">
           Read More &rarr;
         </Button>
+        )}
       </Card.Body>
     </Card>
   );

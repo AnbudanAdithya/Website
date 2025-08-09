@@ -1,10 +1,9 @@
 import React from "react";
 import PurposeofWebsite from "./content/PurposeofWebsite";
-//import RakshaBandhan from "./content/RakshaBandhan";
 // Import other blog posts here...
 
 import Purpose from "../../Assets/Blogs/Purpose.png";
-//import Raksha_Bandhan from "../../Assets/Blogs/Raksha_Bandhan.png";
+import Raksha_Bandhan from "../../Assets/Blogs/Raksha_Bandhan.png";
 
 export const blogData = [
   {
@@ -13,9 +12,20 @@ export const blogData = [
     description:
       "My opinions as to why I created this website and why every corporate professional (or who is going to enter it) should have their own website.",
     thumbnail: Purpose,
+    isExternal: false,
     date: "August 05, 2025",
     component: <PurposeofWebsite />,
   },
+
+ {
+    slug: "Raksha Bandhan - A Thread that ties more than just wrists",
+    title: "Happy Raksha Bandhan!",
+    description:"Raksha Bandhan - A day when you strengthen the bond with your sibling with a life long commitment to stand for, by and with each other through ups and downs of life.",
+    thumbnail: Raksha_Bandhan,
+    date: "August 09, 2025",
+    isExternal: true,
+    link: "https://open.substack.com/pub/adithya05/p/raksha-bandhan-a-thread-that-ties?utm_campaign=post&utm_medium=web"
+},
 
   // Add other blog post objects here...
 ];
