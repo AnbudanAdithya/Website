@@ -100,9 +100,6 @@ function ResumeNew() {
           <h1 className="project-heading" style={{ marginTop: "5rem" }}>
             <strong className="purple">Education</strong>
           </h1>
-          <p style={{ color: "white" }}>
-            I've done my education from these reputed institutions.
-          </p>
           {/* This now has a unique container class: "education-container" */}
           <div className="education-container">
             {education.map((edu, index) => (

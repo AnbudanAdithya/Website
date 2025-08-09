@@ -1121,3 +1121,20 @@ HI, THERE, I'M*/
   background-color: #11e5d0; /* Prevents hover effect on disabled buttons */
   border-color: #11e5d0;
 }
+
+/*---------------------------------------------*/
+/*----   Card Button Alignment Fix         ----*/
+/*---------------------------------------------*/
+
+/* This turns the card's body into a flexible container. */
+.project-card-view .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* This is the key change: It makes the description text expand
+   and take up all available vertical space, which pushes the
+   button(s) to the bottom of the card. */
+.project-card-view .card-text {
+  flex-grow: 1;
+}
